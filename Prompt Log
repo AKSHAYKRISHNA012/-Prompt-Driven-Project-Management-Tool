@@ -1,0 +1,64 @@
+You are an AI full-stack code generator. Help me build a minimal *Project Management Web Application* with the following features, fully using *prompt-driven AI-generated code only. Use the **MERN Stack* (MongoDB, Express.js, React.js, Node.js) and TailwindCSS for styling. Follow each step carefully.
+
+---
+
+### Step 1: Authentication & Authorization
+
+- Create user sign-up and login pages with JWT-based authentication.
+- Allow three roles: Admin, Manager, and Team Member.
+- Admin can manage all users, projects, and tasks.
+- Manager can create/edit projects and assign tasks.
+- Team Members can view and update their assigned tasks.
+- Use Express middleware to restrict routes based on role.
+
+---
+
+### Step 2: Project & Task Boards
+
+- Create a *Kanban-style board* with columns: Backlog, In Progress, Review, Done.
+- Allow Managers to create projects and tasks.
+- Enable drag-and-drop between columns (use react-beautiful-dnd).
+- Include task creation form with fields: Title, Description, Assignee, Due Date, Status.
+- Support filtering by assignee or status.
+
+---
+
+### Step 3: Notifications
+
+- Add real-time in-app notifications for:
+  - Task assignment
+  - Approaching due dates
+- Use Socket.IO for real-time updates.
+- Show unread notification badge in the navbar.
+
+---
+
+### Step 4: Progress Dashboard
+
+- Create a dashboard page with charts (use Recharts or Chart.js) to show:
+  - Tasks completed vs. pending
+  - Tasks by status (Pie Chart)
+  - Project progress over time (Line Chart)
+- Update data in real time as tasks change.
+
+---
+
+### Step 5: File Attachment & Comments
+
+- Add the ability to *upload and attach files* (PDFs, images) to each task.
+- Use Multer for file uploads in Node.js.
+- Store file references in MongoDB and show previews on the task detail page.
+- Implement *threaded comments* per task using nested comment structure (parent/child).
+- Comments can be edited or deleted by their authors.
+
+---
+
+💡 General Guidelines:
+- Use TailwindCSS for responsive, clean UI.
+- Keep backend RESTful and organized.
+- Use dotenv for config, and protect API keys.
+- Seed with 3 dummy users (Admin, Manager, Member).
+- Comment code where necessary.
+- Organize folders as: /client, /server, /models, /routes, /controllers.
+
+---
