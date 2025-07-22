@@ -1,0 +1,5 @@
+{
+  "name": "Zenith Project Management",
+  "description": "A project management dashboard with a Kanban board, task tracking, and progress visualization, built with React and Tailwind CSS.",
+  "requestFramePermissions": []
+}
